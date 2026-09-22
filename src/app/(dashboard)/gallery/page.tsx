@@ -325,7 +325,7 @@ ALTER TABLE gallery_items DISABLE ROW LEVEL SECURITY;`}
             </p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
             {items.map((item) => (
               <div key={item.id} className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm flex flex-col group">
                 {/* Image display */}
