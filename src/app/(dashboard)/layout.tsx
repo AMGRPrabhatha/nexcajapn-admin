@@ -22,7 +22,7 @@ export default async function AdminLayout({
 
       {/* Main Admin Content */}
       <main className="flex-1 flex flex-col min-w-0">
-        <header className="h-16 bg-white border-b border-gray-200 shadow-sm flex items-center justify-between px-6 sm:px-8 sticky top-0 z-20">
+        <header className="h-16 bg-white border-b border-gray-200 shadow-sm flex items-center justify-between pl-14 pr-6 sm:px-8 sticky top-0 z-20">
           <div className="flex items-center gap-3">
             <h1 className="text-lg font-bold text-gray-900 tracking-tight">Admin Control Panel</h1>
           </div>
