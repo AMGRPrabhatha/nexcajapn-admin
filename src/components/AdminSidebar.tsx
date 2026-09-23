@@ -54,14 +54,16 @@ export default function AdminSidebar() {
 
   return (
     <>
-      {/* Mobile Toggle Button */}
-      <button 
-        onClick={() => setIsOpen(!isOpen)}
-        className="md:hidden fixed top-3 left-4 z-50 p-2 bg-white rounded-md shadow-sm border border-gray-200 text-gray-700 hover:bg-gray-50 focus:outline-none"
-        aria-label="Toggle Menu"
-      >
-        {isOpen ? <X size={20} /> : <Menu size={20} />}
-      </button>
+      {/* Mobile Toggle Button (Only visible when closed) */}
+      {!isOpen && (
+        <button 
+          onClick={() => setIsOpen(true)}
+          className="md:hidden fixed top-3 left-4 z-50 p-2 bg-white rounded-md shadow-sm border border-gray-200 text-gray-700 hover:bg-gray-50 focus:outline-none"
+          aria-label="Open Menu"
+        >
+          <Menu size={20} />
+        </button>
+      )}
 
       {/* Mobile Overlay */}
       {isOpen && (
@@ -94,6 +96,15 @@ export default function AdminSidebar() {
                 </span>
               </div>
             </Link>
+            
+            {/* Mobile Close Button */}
+            <button 
+              onClick={() => setIsOpen(false)}
+              className="md:hidden p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-md transition-colors"
+              aria-label="Close Menu"
+            >
+              <X size={20} />
+            </button>
           </div>
 
           {/* Navigation Items */}
