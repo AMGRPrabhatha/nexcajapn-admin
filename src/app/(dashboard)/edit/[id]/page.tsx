@@ -7,8 +7,8 @@ import { updateVehicleAction } from '@/actions/admin';
 import { X, Image as ImageIcon, ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 
-export default function EditVehiclePage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = use(params);
+export default function EditVehiclePage({ params }: { params: { id: string } }) {
+  const { id } = params;
   const router = useRouter();
   const supabase = createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
