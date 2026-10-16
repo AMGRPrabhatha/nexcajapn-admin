@@ -120,15 +120,7 @@ export default function LoginPage() {
             </button>
           </form>
 
-          {/* Quick Note */}
-          <div className="mt-6 pt-5 border-t border-gray-100 text-center">
-            <p className="text-xs text-gray-500">
-              Default password: <code className="bg-gray-100 px-1.5 py-0.5 rounded font-mono text-gray-800 font-semibold">nexca2026</code>
-            </p>
-            <p className="text-[11px] text-gray-400 mt-1">
-              Configure custom password via <code className="font-mono">ADMIN_PASSWORD</code> in <code className="font-mono">.env.local</code>
-            </p>
-          </div>
+
         </div>
 
         {/* Back to Public Site */}
