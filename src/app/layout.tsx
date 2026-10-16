@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Admin Control Panel',
   description: 'Manage Nexca',
+  icons: {
+    icon: '/logo.PNG',
+    shortcut: '/logo.PNG',
+    apple: '/logo.PNG',
+  },
 }
 
 export const viewport = {
